@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+                                   "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="demo.model">
+ <class name="User" table="user">
+  <id column="id" name="id" type="int">
+   <generator class="native"/>
+  </id>
+  <property column="name" name="name" type="string"/>
+  <property column="country" name="country" type="string"/>
+  <property column="email" name="email" type="string"/>
+ </class>
+</hibernate-mapping>
